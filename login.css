@@ -2,6 +2,7 @@
     --cor0: #912163;
     --cor1: #362162;
     --cor3: #D7F9FF;
+    --cor4: #000;
 
 }
 
@@ -29,6 +30,11 @@ body{
     color: var(--cor3);/*nomes das caixas fora*/
     border-radius: 10px;
     padding: 30px 40px;
+    /*---------------*/
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper h1{
@@ -86,4 +92,16 @@ body{
 .wrapper .btn:hover{
     background-color: #8ccad4;
     font-size: 18px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    resize: vertical; /* permite redimensionar apenas no eixo y */
+}
+
+textarea::placeholder {
+    color: var(--cor3); 
+    font-style: italic; 
 }
